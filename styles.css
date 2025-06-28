@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0; 
+}
+
+#game-title {
+  font-family: 'Cinzel', serif; /* beautiful, classic serif font */
+  font-size: 4rem;
+  color: white;
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.6),
+    0 0 20px rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 90%;
+  line-height: 1.2;
+  transition: transform 0.3s ease;
+}
+
+#game-title:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #game-title {
+    font-size: 2.5rem;
+  }
+}
+
+
+#opening-screen {
+  background: url('assets/Opening/bg.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+#opening-screen h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 5px black;
+}
+
+#play-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#play-btn img {
+  width: 150px; /* Adjust to your preferred size */
+  height: auto;
+  display: block;
+}
+
+.social-links {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #ffd700;
+}
